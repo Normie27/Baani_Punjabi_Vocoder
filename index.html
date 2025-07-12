@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Baani Punjabi - Demos</title>
+<style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        td { padding: 8px; text-align: center; border: 0px solid #ddd; }
+        td[nowrap] { font-weight: bold; }
+        audio { width: 180px; }
+    </style>
+</head>
+<body>
+<h1>Baani Punjabi - Demos</h1>
+<p>Below are representative samples synthesized by different vocoder models on Punjabi speech.</p>
+<h2>Sample Set 1</h2>
+<hr/>
+<table>
+<tbody>
+<tr>
+<td nowrap="" width="160">System</td>
+<td>Sample 1</td>
+<td>Sample 2</td>
+<td>Sample 3</td>
+<td>Sample 4</td>
+<td>Sample 5</td>
+</tr>
+<tr>
+<td nowrap=""><strong>Transcript</strong></td>
+<td>ਇਹ ਸੁਣ ਕੇ ਕੁਸਮਲਤਾ ਝਿਜਕ ਗਈ ਤੇ ਬੋਲੀ ਅਜੇਹਾ ਮੁੰਡਾ ਤਾਂ ਮੈਂ ਕਦੀ ਨਹੀਂ ਸੀ ਵੇਖਿਆ , ਮੈਨੂੰ ਰੁਪਏ ਰੱਖਣ ਨੂੰ ਭਲਾ ਥਾਂ ਨਹੀਂ ਨਾ ਮਿਲਦੀ .</td>
+<td>ਮੈਂ ਆਪਣੇ ਹਿਰਦੇ ਵਿਚ ਢੂੰਡ ਕੇ ਵੇਖਿਆ ਪਰ ਸ਼ਬਦ ਸਪਰਸ਼ ਤੇ ਗੰਧ ਤੋਂ ਬਿਨਾਂ ਹੋਰ ਕੁਝ ਨਾ ਮਿਲਿਆ .</td>
+<td>ਮੈਂ ਉਸ ਨੂੰ ਕੁਝ ਕੁਝ ਜਾਣਦੀ ਸਾਂ .</td>
+<td>ਮੇਰੇ ਮਾਤਾ ਪਿਤਾ ਦਾ ਚਿੱਤ ਬੜਾ ਹੀ ਪ੍ਰਸੰਨ ਸੀ .</td>
+<td>ਕ੍ਰਿਸ਼ਨਾ ਨੇ ਆਪਣੀ ਸੌਂਕਣ ਆਉਣ ਦਾ ਦੁਖ ਆਪਣੇ ਭਰਾ ਅਗੇ ਫੋਲ ਦਿਤਾ ਤੇ ਅਖੀਰ ਅੰਦਰੋ ਅੰਦਰ ਇਹ ਫ਼ੈਸਲਾ ਹੋਇਆ ਕਿ ਅੰਨ੍ਹੀ ਦਾ ਵਿਆਹ ਜੇ ਮਦਨ ਲਾਲ ਨਾਲ ਹੀ ਹੋ ਜਾਵੇ ਤਾਂ ਚੰਗਾ ਹੈ .</td>
+</tr>
+<tr>
+<td nowrap="">Ground Truth</td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00067.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00075.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00089.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00091.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00137.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">Parallel WaveGAN</td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00067"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00075.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00089.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00091.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00137.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">BigVGAN</td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00067"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00075.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00089.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00091.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00137.wav"/></audio></td>
+</tr>
+
+<tr>
+<td nowrap="">UnivNET</td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00067"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00075.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00089.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00091.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00137.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">VocGAN</td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00067"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00075.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00089.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00091.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00137.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">Vaachika(V1)</td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00067"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00075.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00089.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00091.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00137.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">Vaachika(V2)</td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00067"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00075.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00089.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00091.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00137.wav"/></audio></td>
+</tr>
+</tbody>
+</table>
+<br/><br/>
+<h2>Sample Set 2</h2>
+<hr/>
+<table>
+<tbody>
+<tr>
+<td nowrap="" width="160">System</td>
+<td>Sample 1</td>
+<td>Sample 2</td>
+<td>Sample 3</td>
+<td>Sample 4</td>
+<td>Sample 5</td>
+</tr>
+<tr>
+<td nowrap=""><strong>Transcript</strong></td>
+<td>ਉਹ ਬੋਲਿਆ , ਸੌਂਕਣ ਤੇ ਕਿਉਂ ਧੀ ਦੇਣ ਲਗੇ ਹੋ ? .</td>
+<td>ਮਾਤਾ ਪਿਤਾ ਬਜ਼ਾਰ ਸੌਦਾ ਪੱਤਾ ਖ਼੍ਰੀਦਣ ਗਏ ਹੋਏ ਸਨ .</td>
+<td>ਮੈਂ ਸਮਝ ਗਈ , ਇਹ ਤਾਂ ਸ੍ਰੀ ਮਤੀ ਕ੍ਰਿਸ਼ਨ ਕੁਮਾਰੀ ਜੀ ਹੈ .</td>
+<td>ਮੈਂ ਕ੍ਰਿਸ਼ਨਾ ਦੇ ਘਰ ਆਪਣੇ ਸੌਹਰੇ ਪਹੁੰਚ ਗਈ .</td>
+<td>ਮੈਂ ਇਕ ਮੁੱਕੀ ਵੱਟ ਕੇ ਅਜੇਹੀ ਮਾਰੀ ਜੁ ਸੋਟੀ ਦੇ ਦੋ ਟੋਟੇ ਹੋ ਗਏ .</td>
+</tr>
+
+<tr>
+<td nowrap="">Ground Truth</td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00140.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00161.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00165.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00181.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/GT/train_punjabifem_00190.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">Parallel WaveGAN</td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00140.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00161.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00165.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00181.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Parallel_WaveGAN_Samples/train_punjabifem_00190.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">BigVGAN</td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00140.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00161.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00165.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00181.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/BigVGAN_Samples/train_punjabifem_00190.wav"/></audio></td>
+</tr>
+
+<tr>
+<td nowrap="">UnivNET</td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00140.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00161.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00165.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00181.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/UnivNET/train_punjabifem_00190.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">VocGAN</td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00140.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00161.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00165.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00181.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/VocGAN/train_punjabifem_00190.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">Vaachika(V1)</td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00140.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00161.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00165.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00181.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V1)/train_punjabifem_00190.wav"/></audio></td>
+</tr>
+<tr>
+<td nowrap="">Vaachika(V2)</td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00140.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00161.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00165.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00181.wav"/></audio></td>
+<td><audio controls="" preload="none"><source src="ss/Vaachika(V2)/train_punjabifem_00190.wav"/></audio></td>
+</tr>
+</tbody>
+</table>
+<br/><br/>
+</body>
+</html>
